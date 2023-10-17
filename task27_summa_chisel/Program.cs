@@ -7,6 +7,29 @@
 */
 Console.Clear();
 
+
+int Prompt(string message)
+{
+    System.Console.Write(message); // вводим приглашение ко вводу
+    string readInput = System.Console.ReadLine();
+    int result = int.Parse(readInput); // приводим к числу
+    return result; // возвращаем результат
+}
+int SumAllDigit(int number)
+{
+    int result = 0;
+    while (number > 0)
+    {
+        result += number % 10;
+        number = number / 10;
+    }
+    return result;
+}
+int number = Prompt("Введите число: ");
+System.Console.WriteLine($"Сумма всех чисел в цифре {number} = {SumAllDigit(number)}");
+
+
+/*
 System.Console.WriteLine("Enter number");
 int userN = Convert.ToInt32(Console.ReadLine());
 int Num(int a)
@@ -20,3 +43,4 @@ int Num(int a)
 }
 int userResult = Num(userN);
 System.Console.WriteLine($"{userN} -> {userResult}");
+*/
