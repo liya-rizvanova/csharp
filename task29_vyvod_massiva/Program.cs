@@ -6,7 +6,7 @@
 */
 Console.Clear();
 
-
+/*
 // Ввод числа с экрана
 int Prompt (string message)
 {
@@ -42,9 +42,9 @@ int min = Prompt("Начальное значение, для диапазона
 int max = Prompt ("Конечное значение, для диапазона случайного числа: ");
 int[] array = GenerateArray(length, min, max); // заполнение массива
 PrintArray (array); // вывод массива
+*/
 
 
-/*
 int[] GetRandArray(int size)
 {
 int[] randomArray = new int[8];
@@ -64,7 +64,7 @@ void PrintArray(int[] arr)
 }
 int[] userArray = GetRandArray(9);
 PrintArray(userArray);
-*/
+
 
 /*
 int[] randomArray = new int[8];
