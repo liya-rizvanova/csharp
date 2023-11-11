@@ -3,7 +3,7 @@
 второй и предпоследний и т.д. Результат запишите в новом массиве.
 
 [1 2 3 4 5] -> 5 8 3
-[6 7 3 6] -> 36 21
+[6 7 3 6]   -> 36 21
 */
 Console.Clear();
 
@@ -25,7 +25,6 @@ void PrintArray(int[] arr)
     {
         System.Console.Write(arr[i]);
         if (i < arr.Length - 1) System.Console.Write(", ");
-
     }
     System.Console.Write("]");
 }
@@ -74,6 +73,7 @@ void PrintArray(int[] arr)
     }
     System.Console.Write("]");
 }
+
 int[] ProductArray(int[] pArr)
 {
     int[] result = new int[pArr.Length / 2 + 1];
@@ -85,9 +85,9 @@ int[] ProductArray(int[] pArr)
             sum = pArr[pArr.Length - 1 - i] * 1;
         result[i] = sum;
     }
-
     return result;
 }
+
 int[] userArray = GetRandomArray(7);
 PrintArray(userArray);
 System.Console.WriteLine();

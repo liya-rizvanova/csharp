@@ -2,11 +2,11 @@
 42. Напишите программу, которая будет преобразовывать десятичное число в двоичное.
 
 45 -> 101101
-3 -> 11
-2 -> 10
+3  -> 11
+2  -> 10
 */
 
-/*
+
 int UserInOut(string message)
 {
     System.Console.Write(message);
@@ -26,9 +26,9 @@ string Conv(int number)
 }
 int uNum = UserInOut("Введите число: ");
 System.Console.WriteLine(Conv(uNum));
-*/
 
 
+/*
 Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
 
@@ -36,7 +36,6 @@ int ToBinary(int number)
 {
     int result = 0;
     int ten = 1;
-
     while (number > 0)
     {
         result = number % 2 * ten + result;
@@ -48,3 +47,4 @@ int ToBinary(int number)
 
 int Number = ToBinary(number);
 System.Console.WriteLine(Number);
+*/

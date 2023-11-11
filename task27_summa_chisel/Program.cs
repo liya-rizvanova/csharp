@@ -1,8 +1,8 @@
 ﻿/*
-Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+27. Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 
-452 -> 11
-82 -> 10
+452  -> 11
+82   -> 10
 9012 -> 12
 */
 Console.Clear();
@@ -15,6 +15,7 @@ int Prompt(string message)
     int result = int.Parse(readInput); // приводим к числу
     return result; // возвращаем результат
 }
+
 int SumAllDigit(int number)
 {
     int result = 0;
@@ -25,6 +26,7 @@ int SumAllDigit(int number)
     }
     return result;
 }
+
 int number = Prompt("Введите число: ");
 System.Console.WriteLine($"Сумма всех чисел в цифре {number} = {SumAllDigit(number)}");
 

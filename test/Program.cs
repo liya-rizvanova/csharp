@@ -7,3 +7,4 @@ int b = 8;
 double result = Math.Sqrt(b);
 System.Console.WriteLine(result);
 */
+// Console.ForegroundColor = ConsoleColor.Blue; // окрашивает в синий цвет

@@ -4,6 +4,8 @@
 
 Подсказка - Теорема о неравенстве треугольника: каждая сторона треугольника
 меньше суммы двух других сторон.
+
+1,2,3 - false
 */
 Console.Clear();
 
@@ -15,13 +17,12 @@ int numberB = Convert.ToInt32(Console.ReadLine());
 int numberC = Convert.ToInt32(Console.ReadLine());
 
 bool Triangle(int numberA, int numberB, int numberC)
-
 {
-if (numberA < numberB + numberC && numberB < numberA + numberC && numberC < numberA + numberB)
-{
-return true;
-}
-return false;
+    if (numberA < numberB + numberC && numberB < numberA + numberC && numberC < numberA + numberB)
+    {
+        return true;
+    }
+    return false;
 }
 
 System.Console.WriteLine(Triangle(numberA, numberB, numberC));

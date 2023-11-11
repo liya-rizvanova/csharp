@@ -3,44 +3,27 @@
 */
 Console.Clear();
 
-/*
-int[] GetRandomArray(int size)
-{
-    int[] array = new int[size];
-    for (int i = 0; i < size; i++)
-    {
-        array[i] = new Random[].New(0, 2);
-    }
-    return array;
-}
-void PrintArray(int[] arr)
-{
-    for (int i = 0; i < arr.Length; i++)
-    {
-        System.Console.WriteLine($"{arr[i]}, ");
-    }
-}
-int[] userArray = GetRandomArray(9);
-PrintArray(userArray);
-*/
-
 
 int[] GetRandArray(int size)
 {
-    int[] array = new int[size];
+    int[] arr = new int[size];
     for (int i = 0; i < size; i++)
     {
-        array[i] = new Random().Next(0, 2);
+        arr[i] = new Random().Next(0, 2);
     }
-    return array;
+    return arr;
 }
 
 void PrintArray(int[] arr)
 {
+    System.Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-        System.Console.Write($"{arr[i]}, ");
+        System.Console.Write(arr[i]);
+        if (i < arr.Length - 1)
+            System.Console.Write(", ");
     }
+    System.Console.WriteLine("]");
 }
 
 int[] userArray = GetRandArray(9);

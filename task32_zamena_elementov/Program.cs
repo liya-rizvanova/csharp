@@ -15,6 +15,7 @@ int[] GetRandArray(int size, int start, int end)
     }
     return array;
 }
+
 void PrintArray(int[] arr)
 {
     System.Console.Write("[");
@@ -27,6 +28,7 @@ void PrintArray(int[] arr)
     System.Console.Write("]");
     System.Console.WriteLine();
 }
+
 System.Console.WriteLine("Ввести размер массива: ");
 int userSize = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Ввести диапазон массива от: ");

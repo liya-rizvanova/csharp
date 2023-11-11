@@ -14,7 +14,6 @@ for (int i = 1; i <= N; i++)
    System.Console.WriteLine($"{i} * {i} * {i} = {Math.Pow(i, 3)}");
 }
 */
-
 for (int i = 1; i <= N; i++)
 {
    System.Console.Write(Math.Pow(i, 3) + " ");

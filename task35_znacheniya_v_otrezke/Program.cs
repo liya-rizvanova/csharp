@@ -3,8 +3,8 @@
 Найдите количество элементов массива, значения которых лежат в отрезке [10,99]. 
 Пример для массива из 5, а не 123 элементов. В своём решении сделайте для 123.
 
-[5, 18, 123, 6, 2] -> 1
-[1, 2, 3, 6, 2] -> 0
+[5, 18, 123, 6, 2]   -> 1
+[1, 2, 3, 6, 2]      -> 0
 [10, 11, 12, 13, 14] -> 5
 */
 Console.Clear();
@@ -13,13 +13,13 @@ Console.Clear();
 int[] FillArray(int size)
 {
     int[] array = new int[size];
-
     for (int i = 0; i < size; i++)
     {
         array[i] = new Random().Next(0, 1000);
     }
     return array;
 }
+
 void PrintArray(int[] arr)
 {
     System.Console.Write("[");
@@ -32,6 +32,7 @@ void PrintArray(int[] arr)
     System.Console.Write("]");
     System.Console.WriteLine();
 }
+
 int Number(int[] arr)
 {
     int sum = 0;

@@ -5,6 +5,8 @@
 4 -> 10
 8 -> 36
 */
+
+
 System.Console.WriteLine("Enter number");
 int userA = Convert.ToInt32(Console.ReadLine());
 int Num(int a)
@@ -16,7 +18,6 @@ int Num(int a)
     }
     return result;
 }
-
 int userResult = Num(userA);
 System.Console.WriteLine($"{userA} -> {userResult}");
 
@@ -24,11 +25,9 @@ System.Console.WriteLine($"{userA} -> {userResult}");
 /*
 System.Console.Write("Введите число A: ");
 int userA = Convert.ToInt32(Console.ReadLine());
-
 int Summer(int a)
 {
     int summ = 0;
-
     for (int i = 1; i <= a; i++)
     {
         summ = summ + i;

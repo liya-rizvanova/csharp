@@ -2,7 +2,7 @@
 36. Задайте одномерный массив, заполненный случайными числами.
 Найдите сумму элементов, стоящих на нечётных позициях.
 
-[3, 7, 23, 12] -> 19
+[3, 7, 23, 12]  -> 19
 [-4, -6, 89, 6] -> 0
 */
 Console.Clear();
@@ -50,6 +50,7 @@ PrintArray(array);
 System.Console.WriteLine();
 SumNegIdx(array);
 
+
 /*
 int Prompt(string message)
 {
@@ -69,6 +70,7 @@ int[] GenerateArray(int Length)
     }
     return array;
 }
+
 void PrintArray(int[] array)
 {
     System.Console.Write("[");

@@ -3,6 +3,8 @@
 */
 Console.Clear();
 
+
+// Создаем рандомный массив с ручным вводом его размера и диапазона
 int[] GetRandArray(int size, int start, int end)
 {
     int[] array = new int[size];
@@ -36,17 +38,16 @@ int[] userArray = GetRandArray(userSize, userStart, userEnd);
 PrintArray(userArray);
 
 Console.ForegroundColor = ConsoleColor.Green;
-System.Console.Write("-> ");
+System.Console.Write(" -> ");
 
-int[] Copy(int[] array)
+int[] CopyArray(int[] array)
 {
     Console.ForegroundColor = ConsoleColor.Blue;
+    int[] newArray = new int[array.Length];
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = array[i] * 1;
+        newArray[i] = array[i];
     }
-    return array;
+    return newArray;
 }
-PrintArray(Copy(userArray));
-//int[] userCopy = Copy(userArray);
-//PrintArray(userCopy);
+PrintArray(CopyArray(userArray));

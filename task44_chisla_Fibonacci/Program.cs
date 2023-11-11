@@ -7,7 +7,7 @@
 */
 Console.Clear();
 
-// Доделать вывод на 0 и 1 ! ! !
+
 int Prompt(string message)
 {
     System.Console.Write(message);
@@ -22,7 +22,6 @@ int[] Fibonacci(int number)
     int[] array = new int[size];
     array[0] = 0;
     array[1] = 1;
-
     for (int i = 2; i < size; i++)
     {
         array[i] = array[i - 1] + array[i - 2];
@@ -32,7 +31,7 @@ int[] Fibonacci(int number)
 
 void PrintArray(int[] arrayOne)
 {
-    System.Console.Write("Number N = " + arrayOne.Length + ": ");
+    System.Console.Write("Number N -> ");
     Console.ForegroundColor = ConsoleColor.Blue;
     for (int i = 0; i < arrayOne.Length; i++)
     {
@@ -42,6 +41,7 @@ void PrintArray(int[] arrayOne)
 }
 int number = Prompt("Enter number: ");
 PrintArray(Fibonacci(number));
+
 
 /*
 int Prompt(string message)
@@ -53,17 +53,14 @@ int Prompt(string message)
 
 int[] Fibonacci(int number)
 {
-
     int[] n = new int[number];
     n[0] = 0;
     if (number == 1) System.Console.Write("Number N = " + n[0] + ": ");
-
     int size = number;
     if (number < 2) size = 2;
     int[] array = new int[size];
     array[0] = 0;
     array[1] = 1;
-
     for (int i = 2; i < size; i++)
     {
         array[i] = array[i - 1] + array[i - 2];
@@ -122,6 +119,7 @@ Console.WriteLine();
 */
 
 /*
+// for idea
  cache = {}
 
     def cached_fibonacci(n):
@@ -147,4 +145,4 @@ def iteractive_fibonacci(n):
         for i in range(2, n):
             previous, current = current, current + previous
         return current
-        */
+*/

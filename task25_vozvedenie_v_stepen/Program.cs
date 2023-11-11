@@ -1,10 +1,9 @@
 ﻿/*
-Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+25. Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 
 3, 5 -> 243 (3⁵)
 2, 4 -> 16
 */
-
 Console.Clear();
 
 
@@ -15,6 +14,7 @@ int Prompt(string message)
     int result = int.Parse(readInput); // приводим к числу
     return result; // возвращаем результат
 }
+
 int Power(int powerBase, int exponent)
 {
     int power = 1;
@@ -24,6 +24,7 @@ int Power(int powerBase, int exponent)
     }
     return power;
 }
+
 bool ValidateExponent(int exponent)
 {
     if (exponent < 0)
@@ -34,12 +35,15 @@ bool ValidateExponent(int exponent)
     }
     return true;
 }
+
 int powerBase = Prompt("Введите основание: ");
 int exponent = Prompt("Bведите показатель: ");
 if (ValidateExponent(exponent))
 {
     System.Console.WriteLine($"Число {powerBase} в степени {exponent} равно {Power(powerBase, exponent)}");
 }
+
+
 /*
 System.Console.WriteLine("Enter number: ");
 int userN = Convert.ToInt32(Console.ReadLine());

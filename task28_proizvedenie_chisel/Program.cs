@@ -33,12 +33,12 @@ int Num(int a)
     for (int i = 1; i <= a; i++)
     {
         //temp = temp + i;
-        result = result * i;
-        
+        result = result * i;        
         System.Console.WriteLine(result);
     }    
     return result;
 }
+
 int userResult = Num(userA);
 System.Console.WriteLine($"{userA} -> {userResult}");
 */

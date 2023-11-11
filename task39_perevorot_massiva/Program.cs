@@ -3,6 +3,7 @@
 
 [1 2 3 4 5] -> [5 4 3 2 1]
 [6 7 3 6] -> [6 3 7 6]
+
 Комментарий: эту задачу можно решить 2 способами: 
 1) менять числа местами в исходном массиве; 
 2) создать новый массив и в него записать перевёрнутый исходный массив по элементам.
@@ -55,10 +56,11 @@ void Reverse(int[] array)
         array[i] = temp;
     }
 }
+
 int size = Prompt("Задай размер массива: ");
 int[] userArray = GetRnd(size);
 PrintArray(userArray);
-System.Console.WriteLine();
+System.Console.Write(" -> ");
 Reverse(userArray);
 PrintArray(userArray);
 
