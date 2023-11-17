@@ -14,7 +14,7 @@ void intN(int first, int last)
     if (last >= first)
     {
         System.Console.Write(first + " ");
-        intN(first +1, last);
+        intN(first + 1, last);
     }
     else
         return;
